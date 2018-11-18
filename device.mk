@@ -64,7 +64,8 @@ PRODUCT_PACKAGES += \
     RcsService
 
 PRODUCT_PACKAGES += \
-    messaging
+    messaging \
+    netutils-wrapper-1.0
 
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
