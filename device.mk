@@ -34,7 +34,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/sm8150/proprietary/qcril-data-hal/qdp \
     vendor/qcom/sm8150/proprietary/qcril-data-hal/util \
     vendor/qcom/sm8150/proprietary/qcril-data-hal/datamodule \
-    vendor/google/interfaces
+    vendor/google/interfaces \
+    vendor/codeaurora/telephony/ims
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
@@ -66,6 +67,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     messaging \
     netutils-wrapper-1.0
+
+# IMS/Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    telephony-ext
 
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
