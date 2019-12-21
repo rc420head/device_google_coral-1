@@ -622,4 +622,7 @@
     <!-- Disable AOD by default -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+    <!-- Whether or not aware is enabled by default -->
+    <bool name="config_awareSettingAvailable">true</bool>
+
 </resources>
