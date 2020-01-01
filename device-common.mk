@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 # Pixelstats broken mic detection
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.vendor.display.enable_kernel_idle_timer=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += vendor.display.enable_kernel_idle_timer=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_wide_color_display=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.has_HDR_display=true
@@ -116,3 +116,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
     ro.gfx.angle.supported=true
+
+# Set thermal warm reset
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.thermal_warmreset = true \
