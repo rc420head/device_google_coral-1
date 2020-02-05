@@ -120,3 +120,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.thermal_warmreset = true \
+
+# SafteyNet prop
+ro.build.fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
