@@ -47,9 +47,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/coral/vendor.img
 
-$(call inherit-product-if-exists, vendor/google/coral/coral-vendor.mk)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+$(call inherit-product, vendor/google/coral/coral-vendor.mk)
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 
 # Boot animation properties
 TARGET_SCREEN_WIDTH := 1440
 TARGET_SCREEN_HEIGHT := 2960
+
+# Include a check for required repos - error out if not present
+$(call inherit-product, device/google/coral/aqua_requirements.mk)
