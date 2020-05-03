@@ -20,7 +20,8 @@
 # lines, aosp and aqua.
 
 # Include AquariOS common configurations
-include vendor/aquarios/config/aqua_full_phone.mk
+include vendor/carbon/config/common.mk
+include vendor/carbon/config/gsm.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/coral/aosp_coral.mk)
@@ -29,7 +30,7 @@ $(call inherit-product, device/google/coral/aosp_coral.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME := aqua_coral
+PRODUCT_NAME := carbon_coral
 PRODUCT_DEVICE := coral
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 4 XL
@@ -54,5 +55,3 @@ $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 TARGET_SCREEN_WIDTH := 1440
 TARGET_SCREEN_HEIGHT := 2960
 
-# Include a check for required repos - error out if not present
-$(call inherit-product, device/google/coral/aqua_requirements.mk)
