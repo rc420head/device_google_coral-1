@@ -18,15 +18,5 @@
    "repository":	"AquariOS/vendor_codeaurora_telephony",
    "target_path":	"vendor/codeaurora/telephony",
    "branch":		"x"
- },
- {
-   "repository":	"gitlab.com/AquariOS/vendor_images",
-   "target_path":	"vendor/images",
-   "branch":		"x"
- },
- {
-   "repository":	"gitlab.com/AquariOS/vendor_pixelgapps",
-   "target_path":	"vendor/pixelgapps",
-   "branch":		"x"
  }
 ]
